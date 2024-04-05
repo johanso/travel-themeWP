@@ -14,7 +14,7 @@
           <span class="header__logo-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
           </span>
-          <span class="header__logo-text"><strong>Reservas</strong> San Andres</span>
+          <span class="header__logo-text">San Andres <strong>Travel</strong></span>
         </a>
       </div>
 
