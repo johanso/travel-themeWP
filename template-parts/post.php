@@ -23,9 +23,9 @@
     </div>
   </section>
 
-
   <div class="container">
     <div class="container__inner">
+      <div class="post_header-breadcrumb"><?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?></div>
       <?php the_content(); ?>
       <?php the_category(''); ?>
     </div>
