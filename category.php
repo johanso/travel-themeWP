@@ -2,6 +2,7 @@
   <?php $category = get_queried_object(); ?>
   <div class="container">
     <h1 class="title-page">Más Sobre: <span><?php echo $category->name; ?></span></h1>
+    <p><?php echo $category->description; ?></p>
     <div class="blog-container">
       <?php
         while( have_posts() ) : the_post();

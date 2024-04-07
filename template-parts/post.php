@@ -16,9 +16,9 @@
       <!--?php the_category(''); ?-->
     </div>
   
-    <div class="post__excerpt">
-      <?php the_excerpt(); ?>
-    </div>
+    <!-- <div class="post__excerpt">
+      <!?php the_excerpt(); ?>
+    </div> -->
       
     <?php if( has_post_thumbnail() ) { the_post_thumbnail('full', array('class' => 'post__image')); } ?>
     
