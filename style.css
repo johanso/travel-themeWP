@@ -831,7 +831,26 @@ img {
   position: relative;
   height: 15rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: .75rem;
+}
+
+.post_header-breadcrumb {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.75rem;
+  padding-bottom: .75rem;
+}
+
+.post_header-breadcrumb p {
+  margin-bottom: 0;
+  font-size: .75rem;
+}
+
+.post_header-breadcrumb .separator {
+  margin: .25rem;
+}
+
+.post_header-breadcrumb a {
+  color: var(--primary-color);
 }
 
 .post_header::after {

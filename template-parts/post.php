@@ -25,7 +25,15 @@
 
   <div class="container">
     <div class="container__inner">
-      <div class="post_header-breadcrumb"><?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?></div>
+      <div class="post_header-breadcrumb">
+        <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="container__inner">
       <?php the_content(); ?>
       <?php the_category(''); ?>
     </div>
