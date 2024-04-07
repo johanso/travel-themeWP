@@ -110,4 +110,4 @@
       </div>
     <?php endif; ?>
   </header>
-  <main>
+  <main class="main">
