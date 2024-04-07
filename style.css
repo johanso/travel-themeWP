@@ -868,6 +868,30 @@ img {
   position: relative;
 }
 
+.container__inner figure {
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.container__inner figcaption {
+  font-size: .75rem;
+  margin: .25rem 0 0;
+}
+
+.container__inner ul {
+  padding-left: 1rem;
+  list-style-position: initial;
+}
+
+.container__inner ul li {
+  margin-bottom: 1rem;
+}
+
+.container__inner ul li:last-child {
+  margin-bottom: 2rem;
+}
+
 .post__title {
   font-size: 1.8rem;
   line-height: 1.2;
