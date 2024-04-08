@@ -25,7 +25,7 @@
       </p>
     </div>
   </div>
-  <p class="footer__copyright">©<?php echo date('Y'); ?> Todos los derechos reservados.</p>
+  <p class="footer__copyright">©<?php echo date('Y'); ?> Todos los derechos reservados | <a href="https://sanandrestravel.com/politicas-privacidad/">Politicas de privacidad</a> </p>
   </footer>
   <?php wp_footer(); ?>
 

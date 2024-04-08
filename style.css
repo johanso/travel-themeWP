@@ -1088,6 +1088,10 @@ img {
   margin-bottom: 0;
 }
 
+.footer__copyright a {
+  color: inherit;
+}
+
 .footer__disclaimer {
   text-align: left;
   border: none;
