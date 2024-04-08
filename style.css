@@ -191,6 +191,10 @@ img {
   margin-top: 4rem;
 }
 
+.main > .container:first-child {
+  padding-top: 2rem;
+}
+
 /* Header styles */
 
 .home .header {
