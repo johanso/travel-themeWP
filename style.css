@@ -868,11 +868,6 @@ img {
   position: relative;
 }
 
-.container__inner a {
-  color: var(--alternative-color-dark);
-  text-decoration: underline;
-}
-
 .container__inner figure {
   margin-bottom: 2rem;
   border-radius: .5rem;
@@ -971,6 +966,7 @@ img {
   list-style: none;
   gap: .75rem;
   margin-top: 3rem;
+  padding-left: 0;
 }
 
 .post .post-categories li {
