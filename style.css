@@ -191,10 +191,6 @@ img {
   margin-top: 4rem;
 }
 
-.main > .container {
-  padding-top: 2rem;
-}
-
 /* Header styles */
 
 .home .header {
@@ -866,6 +862,11 @@ img {
 
 .container__inner {
   position: relative;
+}
+
+.container__inner a {
+  color: var(--alternative-color-dark);
+  text-decoration: underline;
 }
 
 .container__inner figure {
