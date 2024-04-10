@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  font: normal normal 400 16px / 1.4 var(--font-primary);
+  font: normal normal 400 16px / 1.5 var(--font-primary);
 }
 
 body.no-scroll {
@@ -84,19 +84,19 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.35rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: .85rem;
 }
 
 p {
@@ -879,16 +879,19 @@ img {
   margin: .25rem 0 0;
 }
 
-.container__inner ul {
+.container__inner ul,
+.container__inner ol {
   padding-left: 1rem;
   list-style-position: initial;
 }
 
-.container__inner ul li {
+.container__inner ul li,
+.container__inner ol li {
   margin-bottom: 1rem;
 }
 
-.container__inner ul li:last-child {
+.container__inner ul li:last-child,
+.container__inner ol li:last-child {
   margin-bottom: 2rem;
 }
 
