@@ -85,7 +85,6 @@ h2 {
 
 h3 {
   font-size: 1.35rem;
-  color: var(--alternative-color2);
 }
 
 h4 {
@@ -868,6 +867,11 @@ img {
 
 .container__inner {
   position: relative;
+}
+
+.container__inner a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .container__inner figure {
