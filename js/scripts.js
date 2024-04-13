@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     prevScrollPos = currentScrollPos;
   });
+
 })
 
 const carrouselImagesHotel = () => {
@@ -34,12 +35,33 @@ const carrouselImagesHotel = () => {
 }
 
 const menuResponsive = () => {
-  const menu = document.querySelector('#menu-icon');
+  const menuToggle = document.querySelector('#menu-icon');
+  const menuList = document.querySelector('.header__nav-list');
+  const subMenuItems = menuList.querySelectorAll('li.menu-item-has-children a');
+  const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-  menu.addEventListener('click', () => {
-    menu.classList.toggle('is-active')
-  })
+  menuToggle.addEventListener('click', toggleMenu);
 
+  if(mediaQuery.matches) {
+    subMenuItems.forEach(item => item.addEventListener('click', toggleSubMenu));
+  }
+
+  window.addEventListener('resize', resetMenuOnResize);
+
+  function toggleMenu() {
+    menuToggle.classList.toggle('is-active');
+  }
+
+  function toggleSubMenu() {
+    this.parentElement.classList.toggle('open');
+  }
+
+  function resetMenuOnResize() {
+    if(!mediaQuery.matches) {
+      menuToggle.classList.remove('is-active');
+      subMenuItems.forEach(item => item.parentElement.classList.remove('open'));
+    }
+  }
 }
 
 const loadFormContact = () => {
@@ -81,3 +103,5 @@ const faqAccordion = () => {
     });
   });
 }
+
+
