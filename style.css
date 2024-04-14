@@ -1011,6 +1011,12 @@ img {
   margin-bottom: 2rem;
 }
 
+.container__inner ul li ul, 
+.container__inner ol li ul {
+  margin-top: .75rem;
+  list-style: disc;
+}
+
 .post__title {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -1715,4 +1721,56 @@ img {
   .cluster-categories .wp-block-cover::after {
     top: 12rem;
   }
+}
+
+ul.recipes li {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+
+ul.recipes {
+  column-span: all;
+  column-fill: balance;
+}
+
+@media screen and (min-width: 768px) {
+  ul.recipes {
+    column-count: 2;
+    column-gap: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.preparation {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.55rem 1.75rem 1.15rem;
+  background-color: rgb(162 162 162 / 2%);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  border: 1px dashed var(--alternative-color);
+}
+
+article.preparation ul {
+  list-style: none;
+}
+
+.preparation ul li {
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.preparation p {
+  margin-bottom: 0;
+}
+
+.preparation ul li:last-child {
+  margin-bottom: .5rem;
+}
+
+.preparation h3 {
+  margin-bottom: 1rem;
 }
