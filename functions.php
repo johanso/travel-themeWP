@@ -3,6 +3,7 @@
   // includes
   require get_template_directory() . '/includes/widgets.php';
   require get_template_directory() . '/includes/queries.php';
+  require get_template_directory() . '/includes/shortcodes.php';
 
   // add theme support
   function travels_theme_support() {

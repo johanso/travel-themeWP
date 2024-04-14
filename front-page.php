@@ -1,35 +1,7 @@
 <?php get_header(); ?>
 
   <section class="section-home container">
-    <h2 class="section-title">Descubre la Belleza <span>de San Andrés y sus Encantos</span></h2>
-    <p>¡Bienvenido a nuestro portal dedicado a <strong>San Andrés</strong>, la joya del Caribe colombiano! Sumérgete en la magia de esta isla paradisíaca, donde el sol, la playa y la cultura se unen para ofrecerte experiencias inolvidables.</p>
-    <p>En nuestro sitio, encontrarás toda la información necesaria para planificar tus vacaciones. Desde <strong>hoteles de lujo</strong> hasta opciones más <strong>económicas</strong>, pasando por actividades emocionantes y lugares de interés, tenemos todo lo que necesitas para hacer de <strong>tu viaje</strong> una experiencia única.</p>
-    <p>Explora las playas de <strong>arena blanca</strong> y <strong>aguas cristalinas</strong>, sumérgete en la rica historia y cultura de la isla, y déjate llevar por la hospitalidad de su gente. Ya sea que busques relajarte en un <strong>resort de lujo</strong> o aventurarte en emocionantes excursiones, <strong>San Andrés</strong> tiene algo para todos los gustos y presupuestos. ¡Comienza <strong>tu viaje</strong> ahora!</p>
-  </section>
-
-  <section class="section-home container">
-    <div class="blog-container">
-      <?php
-        $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => 3
-        );
-        $query = new WP_Query($args);
-        while( $query -> have_posts() ) {
-          $query -> the_post();
-          get_template_part('template-parts/blog-loop', 'loop');
-        }
-        wp_reset_postdata();
-      ?>
-    </div>
-  </section>
-
-  <section class="section-home container">
-    <div class="place-info_placeinfo">
-      <h2 class="place-info_placeinfo__title"><?php the_field('place_info'); ?></h2>
-      <p class="place-info_placeinfo__description"><?php the_field('place_info_descripcion'); ?></p>
-      <p class="place-info_placeinfo__icon"><svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="var(--white)" class="bi bi-quote" viewBox="0 0 16 16"><path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"></path></svg></p>
-    </div>
+    <?php the_content() ?>
   </section>
 
   <section class="section-home section-home--hotels" style="background-image: url(<?php the_field('imagen_banner'); ?>);">
@@ -46,7 +18,7 @@
   </section>
 
   <section class="section-home container">
-    <h2 class="section-title">Reserva <span>con Ventajas Exclusivas</span></h2>
+    <h2 class="section-title">Reserva con Ventajas Exclusivas</h2>
     <div class="features__cards">
 
       <div class="features__card">
@@ -106,7 +78,7 @@
   <section class="section-home download-app">
     <div class="container">
       <header class="download-app__header">
-        <h2 class="section-title">Descarga <span>la app</span></h2>
+        <h2 class="section-title">Descarga la app</h2>
         <p class="download-app__text">Descarga la app para administrar tus viajes y obtener beneficios</p>
       </header>
       <div class="download-app__buttons">
@@ -163,6 +135,5 @@
       </details>
     </div>
   </section>
-
 
 <?php get_footer(); ?>

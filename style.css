@@ -1219,7 +1219,7 @@ img {
 .section-title {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .section-title span {
@@ -1342,9 +1342,6 @@ img {
 .download-app__header h2 {
   margin-bottom: 1.5rem;
   font-weight: 700;
-}
-
-.download-app__header h2 span {
   color: var(--white);
 }
 
