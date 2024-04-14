@@ -1,7 +1,16 @@
 <article class="blog-card">
   
   <div class="blog-card__categories">
-    <?php the_category(''); ?>
+    <?php $category = get_the_category(); ?>
+    <ul>
+      <?php foreach($category as $cat) : ?>
+        <li>
+          <a href="<?php echo get_category_link($cat->term_id); ?>" class="blog-card__category <?php echo $cat->slug; ?>">
+            <?php echo $cat->name; ?>
+          </a>
+        </li>
+      <?php endforeach; ?>
+    </ul>    
   </div>
   
   <a href="<?php the_permalink(); ?>">
