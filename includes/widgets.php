@@ -13,6 +13,12 @@ class Travels_Posts_Widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
+    
+
+    $category = get_queried_object();
+
+    $category_id = $category->term_id;
+
     ?>
 
     <section class="posts-sidebar">
@@ -30,6 +36,7 @@ class Travels_Posts_Widget extends WP_Widget {
             'posts_per_page' => $instance['quantity'],
             'order' => 'ASC',
             'orderby' => 'date',
+            'cat' => $category_id
           );
           $posts = new WP_Query($args);
           while ( $posts->have_posts() ) {
