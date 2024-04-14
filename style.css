@@ -1117,6 +1117,10 @@ img {
   }
 }
 
+.container.recipes .post__title {
+  color: inherit;
+}
+
 /* Sidebar post */
 
 .post__sidebar .blog-card__categories {
@@ -1754,6 +1758,7 @@ ul.recipes {
 
 article.preparation ul {
   list-style: none;
+  padding: 0;
 }
 
 .preparation ul li {
