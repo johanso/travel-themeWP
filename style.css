@@ -902,6 +902,14 @@ img {
   letter-spacing: 0.1rem;
 }
 
+.blog-card__categories ul a.gastronomia {
+  background: var(--secondary-color-dark);
+}
+
+.blog-card__categories ul a.guias{
+  background: var(--alternative-color-dark);
+}
+
 .blog-card__categories ul a:hover {
   background: var(--primary-color);
 }
