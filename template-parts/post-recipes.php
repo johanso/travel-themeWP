@@ -2,11 +2,10 @@
 
   <div class="container recipes">
     <div class="container__inner">
-      <?php the_title('<h1 class="post__title">', '</h1>'); ?>
-
       <div class="post_header-breadcrumb">
         <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
       </div>
+      <?php the_title('<h1 class="post__title">', '</h1>'); ?>
     </div>
   </div>
 

@@ -1119,6 +1119,7 @@ img {
 
 .container.recipes .post__title {
   color: inherit;
+  margin-bottom: 2rem;
 }
 
 /* Sidebar post */
