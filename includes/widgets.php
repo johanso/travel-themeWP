@@ -12,14 +12,7 @@ class Travels_Posts_Widget extends WP_Widget {
 		);
 	}
 
-	public function widget( $args, $instance ) {
-    
-
-    $category = get_queried_object();
-
-    $category_id = $category->term_id;
-
-    ?>
+	public function widget( $args, $instance ) { ?>
 
     <section class="posts-sidebar">
       <header class="posts-sidebar__header">
@@ -34,9 +27,6 @@ class Travels_Posts_Widget extends WP_Widget {
             'post_type' => 'post',
             'post_status' => 'publish',
             'posts_per_page' => $instance['quantity'],
-            'order' => 'ASC',
-            'orderby' => 'date',
-            'cat' => $category_id
           );
           $posts = new WP_Query($args);
           while ( $posts->have_posts() ) {

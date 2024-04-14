@@ -1096,6 +1096,7 @@ img {
 
 .post .post-categories li {
   display: flex;
+  margin-bottom: 0 !important;
 }
 
 .post .post-categories a {
