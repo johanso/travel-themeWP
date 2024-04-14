@@ -1652,3 +1652,33 @@ img {
   border-left: none;
   border-right: none;
 }
+
+.cluster-categories {
+  flex-direction: column;
+}
+
+.cluster-categories .wp-block-cover {
+  min-height: 12rem;
+  border-radius: .5rem;
+}
+
+.cluster-categories a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 3;
+  color: var(--white);
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+@media screen and (max-width: 992px) {
+  .cluster-categories {
+    flex-direction: row;
+  }
+}
