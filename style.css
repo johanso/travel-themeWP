@@ -1700,4 +1700,11 @@ img {
   .cluster-categories {
     flex-direction: row;
   }
+  .cluster-categories .wp-block-cover {
+    min-height: 15rem;
+  }
+  
+  .cluster-categories .wp-block-cover::after {
+    top: 12rem;
+  }
 }
